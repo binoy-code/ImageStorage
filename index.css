@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+}
+body{
+    background-color: rgb(21, 21, 21);
+}
+header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(202, 202, 202, 0.19);
+    background: color #333333;;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 44px;
+    align-items: center;
+    color: darkgrey;
+}
+header nav ul li{
+    padding: 10px 8px 10px 8px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+header nav ul li:hover{
+background-color: #333333;
+}
+.main{
+    display: flex;
+    gap: 6px;
+}
+.main .select{
+    width:30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    width: 70%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(202, 202, 202, 0.19);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40, 41, 41);
+    flex-direction:column;
+}
+.first-child{
+    display: flex;
+    gap: 1px;
+}
+.backward ,.forward{
+    display: flex;
+}
+.second-child{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background-color: gray;
+    padding: 3px 4px;
+    margin: 2px 4px;
+    border-radius: 0.3rem;
+}
+.input input{
+  border: 2px solid rgba(70, 71, 70, 0.747); 
+  background-color:#fff;
+  outline: none;
+  color:#313131;
+  padding: 2px 5px 2px 5px;
+  font-family:"Madimi One", sans-serif;
+  border-radius: 0.3rem;
+}
+.svg img{
+    margin: 0px 8px 0px 0px;
+}
+.first-child-parent{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px 5px 0px;
+  background-color: rgb(87, 88, 88);
+}
+.cards{
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #2e2d2d;
+   padding: 6px;
+   gap: 3px;
+   justify-content: center;
+   align-items: center;
+   font-family:"Madimi One", sans-serif;
+}
+.anyitems{
+    border-radius: 6px;
+}
+.loadimage{
+    margin: 5px 0px 0px 0px;
+    padding: 3px 10px 3px 10px;
+    outline: none;
+    font-family:"Madimi One", sans-serif;
+    cursor: pointer;
+    background-color: #313131;
+    border-radius: 6px;
+    color:#fff;
+}
+.loadimages:hover{
+    background-color: #292929;
+}
+
+.select div:nth-child(odd){
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #313131;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(202, 202, 202, 0.19);
+    display: flex;
+    padding: 20px 5px 20px 5px;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.select div:nth-child(even){
+    color:black;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #313131;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(202, 202, 202, 0.19);
+    display: flex;
+    padding: 20px 5px 20px 5px;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main .select .active{
+    background-color:#181818;
+    border: 1px solid #413f3f;
+    cursor: pointer;
+}
+
+
+.editing{
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(202, 202, 202, 0.19);
+    border-radius:10px;
+}
+.troll{
+  position: relative;
+  overflow: hidden;
+  background-color: #635d58;
+  border-radius: 8px;
+}
+.stop{
+    position: absolute;
+    left: 175px;
+    top: 88px;
+    background: rgb(124, 123, 123,0.3);
+    border-radius: 1em; 
+    opacity:0;
+}
+.trolling{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    bottom: -56px;
+    background-color: #a4a4a4;
+    transition: bottom 100ms linear;
+}
+.hover{
+    background-color:#282828 !important;
+    border: 1px solid #413f3f;
+    cursor: pointer;
+}
+.sikbhe{
+    width: 50%;
+    background-color: #605e5e;
+    height:3px;
+    border-radius: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.point{
+    width: 5px;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    bottom:-2.89999999999999999px;;
+    border-radius:2rem;
+    left:0%;
+}
+.bottom-up{
+    bottom: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index:5;
+}
+.binos{
+  position: relative;
+  left: 12.125rem;
+  font-weight: 900;
+}
+.value{
+  border: 0px solid white;
+  position: absolute;
+  right: 3%;
+  bottom: 8%;
+  width: 32%;
+  height: 16px;
+  background-color:#222;
+  color:#fff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+.values{
+    visibility: hidden;
+}
+
+
+
+
+
+
