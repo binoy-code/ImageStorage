@@ -130,13 +130,13 @@ function video(pages,search="fruit"){
         divs.appendChild(divi);
          if(divs.getAttribute("class")!=null){
           const img=document.createElement('img')
-              img.setAttribute("src","svg.folder/play.svg");
+              img.setAttribute("src","svg/play.svg");
               img.className="stop"
                divs.appendChild(img);
          }
          if(divi.getAttribute("class")!=null){
           const img=document.createElement('img');
-            img.setAttribute("src","svg.folder/play2.svg");
+            img.setAttribute("src","svg/play2.svg");
             img.className="stops"
             divi.appendChild(img)
          }
@@ -172,24 +172,24 @@ function video(pages,search="fruit"){
                 }
              }
               if(videos.findIndex(checkfunction)!=-1&&videos.findIndex(checkfunction)!=index){
-                events[videos.findIndex(checkfunction)].setAttribute("src","svg.folder/play2.svg")
-                event[videos.findIndex(checkfunction)].setAttribute("src","svg.folder/play.svg");
+                events[videos.findIndex(checkfunction)].setAttribute("src","svg/play2.svg")
+                event[videos.findIndex(checkfunction)].setAttribute("src","svg/play.svg");
                 videos[videos.findIndex(checkfunction)].pause();   
               }
               if(event[index].getAttribute("src").includes("play")){
-                 event[index].setAttribute("src","svg.folder/pause.svg");
-                 events[index].setAttribute("src","svg.folder/pause2.svg")
+                 event[index].setAttribute("src","svg/pause.svg");
+                 events[index].setAttribute("src","svg/pause2.svg")
                  videos[index].play();
               }else{
-                event[index].setAttribute("src","svg.folder/play.svg")
-                events[index].setAttribute("src","svg.folder/play2.svg")
+                event[index].setAttribute("src","svg/play.svg")
+                events[index].setAttribute("src","svg/play2.svg")
                  videos[index].pause()
               }
          },false)
             videos[index].addEventListener("ended",(u)=>{
               u.stopPropagation();
-            num.setAttribute("src","svg.folder/play.svg");
-             events[index].setAttribute("src","svg.folder/play2.svg")
+            num.setAttribute("src","svg/play.svg");
+             events[index].setAttribute("src","svg/play2.svg")
            })
       }
       events.forEach(clickfunction)
